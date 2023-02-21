@@ -2,11 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d803da9b-ae63-4984-b9cb-5f4a327cd46f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BehaviorTree.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Node/ActionNode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Node/CompositeNode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Node/DebugNode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Node/DecoratorNode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BehaviorTreeRunner.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Node/Action/DebugNode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Node/Base/ActionNode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Node/Base/CompositeNode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Node/Base/DecoratorNode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Node/Composite/SequencerNode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Node/Decorator/RepeatNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehaviorTree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehaviorTree.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Node.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Node/Base/Node.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Node/ActionNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Node/CompositeNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Node/DebugNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Node/DecoratorNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,22 +26,39 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BehaviorTree.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Node/CompositeNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Node.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Node/DebugNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Node/ActionNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Node/DecoratorNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Node/Base/CompositeNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Node/Base/Node.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Node/Decorator/RepeatNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Node/Action/DebugNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Node/Base/ActionNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BehaviorTreeRunner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Node/Base/DecoratorNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Node/Composite/SequencerNode.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/Node.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/BehaviorTree.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BehaviorTreeRunner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Node/ActionNode.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Node/DecoratorNode.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Node/CompositeNode.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Node/DebugNode.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Node/DecoratorNode.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Node/RepeatNode.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Node/Base/Node.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BehaviorTree.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Node/Decorator/RepeatNode.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Node/Composite/SeqwuencerNode.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Node/Composite/SequencerNode.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2LowQ8BolgOb9eUgNZbMSmOHoIV" />
@@ -80,6 +107,7 @@
       <option name="presentableId" value="Default" />
       <updated>1676550723677</updated>
       <workItem from="1676550729515" duration="3326000" />
+      <workItem from="1676979904324" duration="1718000" />
     </task>
     <servers />
   </component>
@@ -98,6 +126,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
