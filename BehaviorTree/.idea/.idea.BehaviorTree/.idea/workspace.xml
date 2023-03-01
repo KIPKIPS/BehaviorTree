@@ -5,42 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d803da9b-ae63-4984-b9cb-5f4a327cd46f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/BehaviorTreeEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/BehaviorTreeEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/BehaviorTreeEditor.uss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/BehaviorTreeEditor.uss.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/BehaviorTreeEditor.uxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/BehaviorTreeEditor.uxml.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/BehaviorTreeView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/BehaviorTreeView.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/InspectorView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/InspectorView.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/SplitView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/SplitView.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Node/Action/WaitNode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Node/Action/WaitNode.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UIElements.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/Unity.Cloud.Collaborate.Components.ChangeListEntries.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/Unity.Cloud.Collaborate.Components.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/Unity.Cloud.Collaborate.Views.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/Unity.Profiling.Editor.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/Unity.UI.Builder.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.Experimental.GraphView.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.Overlays.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.PackageManager.UI.Internal.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.Search.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.ShortcutManagement.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.UIElements.Debugger.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.UIElements.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEngine.UIElements.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSettings/Search.settings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BehaviorTree/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BehaviorTree/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Node/Action/DebugNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Node/Action/DebugNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/BehaviorTreeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/BehaviorTreeEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/BehaviorTreeView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/BehaviorTreeView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehaviorTree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehaviorTree.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Node/Base/Node.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Node/Base/Node.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,9 +28,18 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BehaviorTree.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/BehaviorTreeEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BehaviorTree.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Node/Base/CompositeNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Node/Base/Node.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Node/Decorator/RepeatNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/BehaviorTreeView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Node/Action/DebugNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Node/Base/ActionNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BehaviorTreeRunner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3D3C2EE7-BD90-49E4-9660-C19AC0086ECA/08/ae05ea8b/UQueryExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Node/Base/DecoratorNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Node/Composite/SequencerNode.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -73,11 +50,13 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Node/DebugNode.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Node/DecoratorNode.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Node/RepeatNode.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Node/Base/Node.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/BehaviorTree.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Node/Decorator/RepeatNode.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Node/Composite/SeqwuencerNode.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Node/Composite/SequencerNode.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Node/Base/Node.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BehaviorTree.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/BehaviorTreeEditor.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/BehaviorTreeView.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2LowQ8BolgOb9eUgNZbMSmOHoIV" />
@@ -136,6 +115,8 @@
       <workItem from="1676550729515" duration="3326000" />
       <workItem from="1676979904324" duration="1718000" />
       <workItem from="1677071758309" duration="6851000" />
+      <workItem from="1677573310379" duration="1197000" />
+      <workItem from="1677659842243" duration="919000" />
     </task>
     <servers />
   </component>

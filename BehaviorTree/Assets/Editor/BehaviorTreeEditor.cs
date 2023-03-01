@@ -1,20 +1,20 @@
+using System;
+using AI;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEditor.UIElements;
 
-
-public class BehaviorTreeEditor : EditorWindow
-{
-    [MenuItem("BehaviorTreeEditor/Editor ...")]
-    public static void OpenWindow()
-    {
+public class BehaviorTreeEditor : EditorWindow {
+    private BehaviorTreeView treeView;
+    private InspectorView inspectorView;
+    [MenuItem("Tools/AI/BehaviorTreeEditor")]
+    public static void OpenWindow() {
         BehaviorTreeEditor wnd = GetWindow<BehaviorTreeEditor>();
         wnd.titleContent = new GUIContent("BehaviorTreeEditor");
     }
 
-    public void CreateGUI()
-    {
+    public void CreateGUI() {
         // Each editor window contains a root VisualElement object
         VisualElement root = rootVisualElement;
 
@@ -25,7 +25,17 @@ public class BehaviorTreeEditor : EditorWindow
         // A stylesheet can be added to a VisualElement.
         // The style will be applied to the VisualElement and all of its children.
         var styleSheet = AssetDatabase.LoadAssetAtPath<StyleSheet>("Assets/Editor/BehaviorTreeEditor.uss");
-        
         root.styleSheets.Add(styleSheet);
+
+        treeView = root.Q<BehaviorTreeView>();
+        inspectorView = root.Q<InspectorView>();
+    }
+
+    private void OnSelectionChange() {
+        BehaviorTree tree = Selection.activeObject as BehaviorTree;
+        if (tree) {
+            treeView.PopulateView(tree);
+            
+        }
     }
 }

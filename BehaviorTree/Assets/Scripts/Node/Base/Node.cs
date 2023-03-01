@@ -10,7 +10,7 @@ namespace AI {
 
         public State state;
         public bool started = false;
-        
+        public string guid;
         /// <summary>
         /// 更新逻辑
         /// </summary>
