@@ -8,8 +8,8 @@ EditorUserSettings:
     RecentlyUsedSceneGuid-0:
       value: 5a5757560101590a5d0c0e24427b5d44434e4c7a7b7a23677f2b4565b7b5353a
       flags: 0
-    UIBuilder.DisableMouseWheelZooming:
-      value: 2550581500
+    RecentlyUsedSceneGuid-1:
+      value: 070452555c010b095e0855721526064443164d7c2e2d7064747d1f35b7b4326e
       flags: 0
     UIBuilder.EditorExtensionModeKey:
       value: 37434103
@@ -22,7 +22,7 @@ EditorUserSettings:
   m_VCDebugCmd: 0
   m_VCDebugOut: 0
   m_SemanticMergeMode: 2
-  m_DesiredImportWorkerCount: 2
+  m_DesiredImportWorkerCount: 6
   m_StandbyImportWorkerCount: 2
   m_IdleImportWorkerShutdownDelay: 60000
   m_VCShowFailedCheckout: 1

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using State = AI.Node.State;
 using UnityEditor;
+
 namespace AI {
     [CreateAssetMenu()]
     public class BehaviorTree : ScriptableObject {
@@ -17,20 +18,19 @@ namespace AI {
         }
 
         public Node CreateNode(Type type) {
-            Node node = ScriptableObject.CreateInstance(type) as Node;
+            Node node = CreateInstance(type) as Node;
             node.name = type.Name;
             node.guid = GUID.Generate().ToString();
             nodes.Add(node);
-            AssetDatabase.AddObjectToAsset(node,this);
+            AssetDatabase.AddObjectToAsset(node, this);
             AssetDatabase.SaveAssets();
             return node;
         }
-        
+
         public void DeleteNode(Node node) {
             nodes.Remove(node);
             AssetDatabase.RemoveObjectFromAsset(node);
             AssetDatabase.SaveAssets();
         }
     }
-    
 }
