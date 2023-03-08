@@ -7,12 +7,12 @@ using UnityEngine;
 
 namespace AI {
     public class BehaviorTreeRunner : MonoBehaviour {
-        private BehaviorTree behaviorTree;
+        public BehaviorTree behaviorTree;
         void Start() {
-            behaviorTree = ScriptableObject.CreateInstance<BehaviorTree>();
+            behaviorTree = behaviorTree.Clone();
         }
         private void Update() {
             behaviorTree.Update();
-        }
+        } 
     }
 }

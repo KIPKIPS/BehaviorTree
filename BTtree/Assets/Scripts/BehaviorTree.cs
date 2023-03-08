@@ -42,6 +42,11 @@ namespace AI {
             if (composite) {
                 composite.children.Add(child);
             }
+            
+            RootNode root = parent as RootNode;
+            if (root) {
+                root.child = child;
+            }
         }
         public void RemoveChild(Node parent,Node child) {
             DecoratorNode decorator = parent as DecoratorNode;
@@ -52,6 +57,10 @@ namespace AI {
             if (composite) {
                 composite.children.Remove(child);
             }
+            RootNode root = parent as RootNode;
+            if (root) {
+                root.child = null;
+            }
         }
         
         public List<Node> GetChildren(Node parent) {
@@ -61,10 +70,20 @@ namespace AI {
             }
             List<Node> children = new List<Node>();
             DecoratorNode decorator = parent as DecoratorNode;
-            if (decorator) {
+            if (decorator && decorator.child != null) {
                 children.Add(decorator.child);
             }
+            RootNode root = parent as RootNode;
+            if (root && root.child != null) {
+                children.Add(root.child);
+            }
             return children;
+        }
+
+        public BehaviorTree Clone() {
+            BehaviorTree tree = Instantiate(this);
+            tree.rootNode = tree.rootNode.Clone();
+            return tree;
         }
     }
 }

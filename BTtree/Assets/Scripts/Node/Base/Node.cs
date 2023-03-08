@@ -8,10 +8,10 @@ namespace AI {
             Running,Failure,Success,
         }
 
-        public State state;
-        public bool started = false;
-        public string guid;
-        public Vector2 position;
+        [HideInInspector]public State state;
+        [HideInInspector]public bool started = false;
+        [HideInInspector]public string guid;
+        [HideInInspector]public Vector2 position;
         /// <summary>
         /// 更新逻辑
         /// </summary>
@@ -32,6 +32,10 @@ namespace AI {
         protected abstract void OnStart();
         protected abstract State OnUpdate();
         protected abstract void OnStop();
+
+        public virtual Node Clone() {
+            return Instantiate(this);
+        }
     }
     
 }

@@ -1,5 +1,22 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4093810118828872247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e17332de8f4a446da94f6580801e8cd7, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 40a811cb806536049b51a423b226edee
+  position: {x: 0, y: 0}
+  child: {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,12 +29,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 730929dd38624203a45ee3f1a0d81f17, type: 3}
   m_Name: New Behavior Tree
   m_EditorClassIdentifier: 
-  rootNode: {fileID: 0}
+  rootNode: {fileID: -4093810118828872247}
   treeState: 0
   nodes:
   - {fileID: 2447473887633505681}
   - {fileID: 2421684683551826868}
   - {fileID: 8075516506978849897}
+  - {fileID: -4093810118828872247}
 --- !u!114 &2421684683551826868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33,7 +51,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 2c0810022ef4d384d9b691b8218e6229
-  position: {x: 169, y: 12}
+  position: {x: 85, y: 270}
   duration: 1
 --- !u!114 &2447473887633505681
 MonoBehaviour:
@@ -50,7 +68,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: d779052c3dfe1c444b7cea938d877502
-  position: {x: 0, y: 0}
+  position: {x: 50, y: 137}
   message: 
 --- !u!114 &8075516506978849897
 MonoBehaviour:
@@ -67,5 +85,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 78b16e6c6be23154aad94cd301e82ad9
-  position: {x: 0, y: 0}
-  children: []
+  position: {x: -238.6, y: 193}
+  children:
+  - {fileID: 2447473887633505681}
+  - {fileID: 2421684683551826868}

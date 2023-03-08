@@ -9,6 +9,7 @@ using UnityEditor.Experimental.GraphView;
 using Node = AI.Node;
 
 public class BehaviorTreeView : GraphView {
+    public Action<NodeView> OnNodeSelected;
     public new class UxmlFactory : UxmlFactory<BehaviorTreeView, GraphView.UxmlTraits> {
     }
 
@@ -27,7 +28,28 @@ public class BehaviorTreeView : GraphView {
         graphViewChanged -= OnGraphViewChanged;
         DeleteElements(graphElements);
         graphViewChanged += OnGraphViewChanged;
+
+        if (tree.rootNode == null) {
+            tree.rootNode = tree.CreateNode(typeof(RootNode)) as RootNode;
+            EditorUtility.SetDirty(tree);
+            AssetDatabase.SaveAssets();
+        }
+        //create node view
         tree.nodes.ForEach(n => CreateNodeView(n));
+        
+        //create edge
+        tree.nodes.ForEach(n => {
+            var children = tree.GetChildren(n);
+            children.ForEach(c => {
+                NodeView parentView = FindNodeView(n);
+                NodeView childView = FindNodeView(c);
+                Edge edge = parentView.output.ConnectTo(childView.input);
+                AddElement(edge);
+            });
+        });
+    }
+    NodeView FindNodeView(Node node) {
+        return GetNodeByGuid(node.guid) as NodeView;
     }
     public override List<Port> GetCompatiblePorts(Port startPort, NodeAdapter nodeAdapter) {
         return ports.ToList().Where(endPort => endPort.direction != startPort.direction && endPort.node != startPort.node).ToList();
@@ -58,10 +80,6 @@ public class BehaviorTreeView : GraphView {
         }
         return graphViewChange;
     }
-    void CreateNodeView(Node node) {
-        NodeView nodeView = new NodeView(node);
-        AddElement(nodeView);
-    }
 
     public override void BuildContextualMenu(ContextualMenuPopulateEvent evt) {
         foreach (var type in TypeCache.GetTypesDerivedFrom<ActionNode>()) {
@@ -78,5 +96,11 @@ public class BehaviorTreeView : GraphView {
     void CreateNode(Type type) {
         Node node = tree.CreateNode(type);
         CreateNodeView(node);
+    }
+    
+    void CreateNodeView(Node node) {
+        NodeView nodeView = new NodeView(node);
+        nodeView.OnNodeSelected += OnNodeSelected; 
+        AddElement(nodeView);
     }
 }
