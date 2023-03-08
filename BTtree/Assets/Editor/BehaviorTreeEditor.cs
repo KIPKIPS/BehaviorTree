@@ -29,6 +29,8 @@ public class BehaviorTreeEditor : EditorWindow {
 
         treeView = root.Q<BehaviorTreeView>();
         inspectorView = root.Q<InspectorView>();
+
+        OnSelectionChange();
     }
 
     private void OnSelectionChange() {

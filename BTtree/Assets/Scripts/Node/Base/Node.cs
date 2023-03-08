@@ -11,6 +11,7 @@ namespace AI {
         public State state;
         public bool started = false;
         public string guid;
+        public Vector2 position;
         /// <summary>
         /// 更新逻辑
         /// </summary>
